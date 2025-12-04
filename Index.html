@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mi Página</title>
-<style>
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 2rem;
-}
-header {
-background: #f0f0f0;
-padding: 1rem;
-border-radius: 0.5rem;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>Índice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-<header>
-<h1>Bienvenido a mi página</h1>
-</header>
-<main>
-<p>Este es un index.html básico generado por ChatGPT.</p>
-</main>
+    <h1>TA05</h1>
+    <p>Hoy es: <span id="dia"></span></p>
+
+    <script>
+        const fecha = new Date();
+        const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById("dia").textContent = fecha.toLocaleDateString('es-ES', opciones);
+    </script>
 </body>
 </html>
